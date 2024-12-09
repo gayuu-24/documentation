@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python basics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="docu.css">
+    <link rel="icon" href="python.png" type="image/x-icon"/>
+</head>
+<body class="body">
+    <p class="fs-4 headings text-center mt-2 "> Python syntax</p>
+    <p class="fs-5 paragraph ms-2 mt-2 "> Python syntax can be executed by writing directly in the Command Line</p>
+    <div class="box5">
+        <p class="fs-5 paragraph ms-2 mt-2"> >>>|print("hello world")</p>
+        <p class="fs-5 paragraph ms-2 "> >>>|hello world    </p>
+    </div>
+    <p class="fs-5 paragraph ms-2 mt-4 ">Python uses Indendation to define block of codes</p>
+    <div class="box5">
+        <p class="fs-5 paragraph ms-2 mt-4"> if True:     </p>
+        <p class="fs-5 paragraph ms-2 mt-1"> &thinsp;&thinsp;&thinsp;print("Python uses indendation!")     </p>
+
+    </div>
+    <p class="fs-5 paragraph ms-2 mt-4">Output:</p>
+    <p class="fs-5 paragraph ms-2 mt-4 text-primary"> Python uses indendation!</p>
+    <p class="fs-4 headings text-center  mt-2">Comments</p>
+    
+ <p class="fs-5 paragraph ms-2 mt-4 "> Python has commenting capability for the purpose of in-code documentation. </p>
+ <p class="fs-5 paragraph ms-2 mt-4 ">Comments start with a #, and Python will render the rest of the line as a comment:</p>
+ <div class="box">
+    <p class="fs-5 paragraph ms-2 mt-4"># this is a comment line</p>
+    <p class="fs-5 paragraph ms-2 mt-4"></p>
+
+ </div>
+ <p class="fs-4 headings text-center mt-2 "> Variables and Data types</p>
+ <p class="fs-5 paragraph ms-2 mt-4 ">Variables are created by assigning a value using the = operator.</p>
+ <p class="fs-5 paragraph ms-2 mt-4 ">No need to declare the type explicitly (dynamic typing). </p>
+ <div class="box1">
+    <p class="fs-5 paragraph ms-2 mt-4"> x = 10     </p>
+    <p class="fs-5 paragraph ms-2 "> y = 3.14     </p>
+    <p class="fs-5 paragraph ms-2 "> name = "john"    </p>
+    <p class="fs-5 paragraph ms-2 "> is_active = True    </p>
+
+ </div>
+ <p class="fs-4 headings text-center mt-2 "> Common Data types</p>
+ <ul class="para">
+    <li class="mt-2 fs-5">int : Integer Number (eg : 10, -12 )</li>
+    <li class="mt-2 fs-5">float : Decimal Numbers (eg : 3.14, -0.11)</li>
+    <li class="mt-2 fs-5">string : Text enclosed in quotes (eg : "Apple", "orange")</li>
+    <li class="mt-2 fs-5">boolean : Logical values (True, False)</li>
+
+ </ul>
+ <p class="fs-4 headings text-center mt-2 "> Input and Output</p>
+ <ul>
+    <li class="mt-2 fs-5 para">Input : Use input() to get user input (always returns a string)</li>
+ </ul>
+ <div class="box2">
+    <p class="fs-5 paragraph ms-2 mt-4"> name = input (" Enter your name: ")     </p>
+
+ </div>
+
+ <p class="fs-5 paragraph ms-2 mt-4">Output:</p>
+ <div class="box2">  <p class="fs-5 paragraph ms-2 mt-4 "> Enter your name: </p></div>
+
+   
+    <ul>
+        <li class="mt-4 fs-5 para">Output : Use print() to display the output</li>
+     </ul>
+     <div class="box2">
+        <p class="fs-5 paragraph ms-2 mt-4"> print(" The result is ", 24)  </p>
+    
+     </div>
+     <p class="fs-5 paragraph ms-2 mt-4">Output:</p>
+     <div class="box2">  <p class="fs-5 paragraph ms-2 mt-4 "> The result is 24 </p></div>
+     <p class="fs-4 headings text-center mt-2 "> Basic Operations</p>
+     <ul style="list-style-type: square;">
+        <li class="mt-2 fs-4 para">Arithmetic operators</li>
+     </ul>
+     <p class="fs-5 paragraph ms-2 mt-4"> Arithmetic operators are used with numeric values to perform common mathematical operations     </p>
+
+     <table style="width:70%">
+        <tr>
+          <th>Operator</th>
+          <th>Name</th> 
+          <th>Example</th>
+        </tr>
+        <tr>
+          <td> + </td>
+          <td> Addition </td>
+          <td> x&thinsp;+&thinsp;y </td>
+        </tr>
+        <tr>
+          <td>- </td>
+          <td> Subtraction </td>
+          <td> x&thinsp;-&thinsp;y; </td>
+        </tr>
+        <tr>
+          <td> * </td>
+          <td> Multiplication</td>
+          <td> x&thinsp;*&thinsp;y </td>
+        </tr>
+        <tr>
+            <td> / </td>
+            <td> Division</td>
+            <td> x&thinsp;/&thinsp;y </td>
+          </tr>
+          <tr>
+            <td> % </td>
+            <td> Modulus</td>
+            <td> x&thinsp;%&thinsp;y </td>
+          </tr>
+          <tr>
+            <td> ** </td>
+            <td> Exponential</td>
+            <td> x&thinsp;*&thinsp;*&thinsp;y </td>
+          </tr>
+          <tr>
+            <td> // </td>
+            <td> Floor Division </td>
+            <td> x&thinsp;/&thinsp;/&thinsp;y </td>
+          </tr>
+      </table>
+      <p class="fs-5 paragraph ms-2 mt-4"> Example: </p>
+
+      <div class="box3">
+        <p class="fs-5 paragraph ms-2 mt-4"> x = 2 </p>
+        <p class="fs-5 paragraph ms-2 mt-1"> y = 3 </p>
+        <p class="fs-5 paragraph ms-2 mt-1"> print(x + y) </p>
+        <p class="fs-5 paragraph ms-2 mt-1"> print(x // y) </p>
+      </div>
+      <p class="fs-5 paragraph ms-2 mt-4">Output:</p>
+      <div class="box">  
+        <p class="fs-5 paragraph ms-2 mt-4 "> 5 </p>
+      </div>
+      <div class="box">
+        <p class="fs-5 paragraph ms-2 mt-1 "> 0 </p>
+      </div>
+      <ul style="list-style-type: square;">
+        <li class="mt-4 fs-4 para">Assignment operators</li>
+     </ul>
+     <p class="fs-5 paragraph ms-2 mt-4"> Assignment operators are used to assign values to variables</p>
+
+     <table style="width:70%">
+        <tr>
+          <th>Operator</th>
+          <th>Example</th> 
+          <th>Same as</th>
+        </tr>
+        <tr>
+          <td> = </td>
+          <td>  x&thinsp;=&thinsp;5 </td>
+          <td> x&thinsp;=&thinsp;5 </td>
+        </tr>
+        <tr>
+          <td>+= </td>
+          <td>  x&thinsp;+=&thinsp;3 </td>
+          <td> x&thinsp;=&thinsp;x&thinsp;+&thinsp;3 </td>
+        </tr>
+        <tr>
+          <td> -= </td>
+          <td> x&thinsp;-=&thinsp;3 </td>
+          <td> x&thinsp;=&thinsp;x&thinsp;-&thinsp;3 </td>
+        </tr>
+        <tr>
+            <td> *= </td>
+            <td> x&thinsp;*=&thinsp;3 </td>
+            <td> x&thinsp;=&thinsp;x&thinsp;*&thinsp;3 </td>
+          </tr>
+          <tr>
+            <td> /= </td>
+            <td> x&thinsp;/=&thinsp;3  </td>
+            <td> x&thinsp;=&thinsp;x&thinsp;/&thinsp;3 </td>
+          </tr>
+          <tr>
+            <td> %= </td>
+            <td> x&thinsp;%=&thinsp;3 </td>
+            <td> x&thinsp;=&thinsp;x&thinsp;%&thinsp;3 </td>
+          </tr>
+          <tr>
+            <td> //= </td>
+            <td> x&thinsp;//=&thinsp;3 </td>
+            <td> x&thinsp;=&thinsp;x&thinsp;/&thinsp;/&thinsp;3 </td>
+          </tr>
+          <td> **= </td>
+            <td> x&thinsp;**=&thinsp;3 </td>
+            <td> x&thinsp;=&thinsp;x&thinsp;*&thinsp;*&thinsp;3 </td>
+          </tr>
+      </table>
+      <p class="fs-5 paragraph ms-2 mt-4"> Example: </p>
+      <div class="box4">
+        <p class="fs-5 paragraph ms-2 mt-4"> x = 2 </p>
+        <p class="fs-5 paragraph ms-2 mt-1"> x += 3 </p>
+        <p class="fs-5 paragraph ms-2 mt-1"> print(x) </p>
+      </div>
+      <p class="fs-5 paragraph ms-2 mt-4">Output:</p>
+      <div class="box">  
+        <p class="fs-5 paragraph ms-2 mt-4 "> 5 </p>
+      </div>
+
+      <ul style="list-style-type: square;">
+        <li class="mt-4 fs-4 para">Comparison operators</li>
+     </ul>
+     <p class="fs-5 paragraph ms-2 mt-4"> Comparison operators are used to compare two values</p>
+
+     <table style="width:70%">
+        <tr>
+          <th>Operator</th>
+          <th>Name</th> 
+          <th>Example</th>
+        </tr>
+        <tr>
+          <td> == </td>
+          <td> Equal </td>
+          <td> x&thinsp;==&thinsp;y </td>
+        </tr>
+        <tr>
+          <td>!= </td>
+          <td> Not Equal </td>
+          <td> x&thinsp;!=&thinsp;y </td>
+        </tr>
+        <tr>
+          <td> > </td>
+          <td> Greater than</td>
+          <td> x&thinsp;>&thinsp;y </td>
+        </tr>
+        <tr>
+            <td> < </td>
+            <td> Less than</td>
+            <td> x&thinsp;<&thinsp;y </td>
+          </tr>
+          <tr>
+            <td> >= </td>
+            <td> Greater than or equal to</td>
+            <td> x&thinsp;>=&thinsp;y </td>
+          </tr>
+          <tr>
+            <td> <= </td>
+            <td> Less than or equal to</td>
+            <td> x&thinsp;<&thinsp;=&thinsp;y </td>
+          </tr>
+      </table>
+      <p class="fs-5 paragraph ms-2 mt-4"> Example: </p>
+      <div class="box4">
+        <p class="fs-5 paragraph ms-2 mt-4"> x = 2 </p>
+        <p class="fs-5 paragraph ms-2 mt-1"> y = 3 </p>
+        <p class="fs-5 paragraph ms-2 mt-1"> print(x>y) </p>
+      </div>
+      <p class="fs-5 paragraph ms-2 mt-4">Output:</p>
+      <div class="box">  
+        <p class="fs-5 paragraph ms-2 mt-4 "> False </p>
+      </div>
+
+      <div type="button" class="btn button mb-4 mt-4 me-2  float-end"><a href="docu3.html" class="text-decoration-none text-dark">Next></a></div>
+      <div type="button" class="btn button mb-4  mt-4 ms-2 float-start"><a href="docu1.html" class="text-decoration-none text-dark"> Previous< </a></div>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>       
+</body>
+</html>

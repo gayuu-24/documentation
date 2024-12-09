@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control flow</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="docu.css">
+    <link rel="icon" href="python.png" type="image/x-icon"/>
+</head>
+<body class="body">
+    <p class="fs-4 headings text-center mt-2 "> Control Flow</p>
+    <p class="fs-5 paragraph ms-2 mt-2 ">Control flow in Python allows you to control the execution of code based on conditions or repetitive tasks</p>
+    <ol class="para">
+        <li class="mt-2 fs-5">Conditional statements</li>
+        <li class="mt-2 fs-5">Loops</li>
+        <li class="mt-2 fs-5">Break and Continue statements</li>
+    </ol>
+  
+    <p class="fs-5 paragraph ms-2 mt-2 ">Python supports the usual logical conditions from mathematics</p>
+    <ul class="para"> 
+        <li class="mt-2 fs-5">Equals: a == b</li>
+        <li class="mt-2 fs-5">Not Equals: a != b</li>
+        <li class="mt-2 fs-5">Less than: a < b</li>
+        <li class="mt-2 fs-5">Less than or equal to: a <= b</li>
+        <li class="mt-2 fs-5">Greater than: a > b</li>
+        <li class="mt-2 fs-5">Greater than or equal to: a >= b</li>
+      </ul>
+      <p class="fs-4 headings text-center mt-2 "> Conditional statements</p>
+      <p class="fs-5 paragraph ms-2 mt-2 ">Used to execute code blocks based on conditions</p>
+      <ul class="para"> 
+        <li class="mt-2 fs-5">IF statement</li>
+      </ul>
+      <p class="fs-5 paragraph ms-2 mt-2 ">An "if statement" is written by using the if keyword.</p>
+      <p class="fs-5 paragraph ms-2 mt-4"> Example: </p>
+
+      <div class="box1">
+        <p class="fs-5 paragraph ms-2 mt-4">  a = 33    </p>
+        <p class="fs-5 paragraph ms-2 mt-1"> b = 200     </p>
+        <p class="fs-5 paragraph ms-2 mt-1">  if b > a:    </p>
+        <p class="fs-5 paragraph ms-2 mt-1">  &nbsp;&nbsp;print("b is greater than a")   </p>
+
+      </div>
+      <p class="fs-5 paragraph ms-2 mt-4 ">The above example code compares two variables, a and b. If b is greater than a, the if condition evaluates to True, and the message "b is greater than a" is printed.</p>
+      <p class="fs-5 paragraph ms-2 mt-4">Output:</p>
+      <div class="box">
+        <p class="fs-5 paragraph ms-2 mt-1"> b is greater than a   </p>
+ 
+      </div>
+      <ul class="para"> 
+        <li class="mt-4 fs-5">ELIF statement</li>
+      </ul>
+      <p class="fs-5 paragraph ms-2 mt-2 ">The elif keyword is Python's way of saying "if the previous conditions were not true, then try this condition".</p>
+      <p class="fs-5 paragraph ms-2 mt-4"> Example: </p>
+      <div class="box6">
+        <p class="fs-5 paragraph ms-2 mt-3">   a = 33  </p>
+        <p class="fs-5 paragraph ms-2 mt-1">  b = 33  </p>
+        <p class="fs-5 paragraph ms-2 mt-1">  if b > a:  </p>
+        <p class="fs-5 paragraph ms-2 mt-1">  &nbsp;&nbsp;  print("b is greater than a")   </p>
+        <p class="fs-5 paragraph ms-2 mt-1">  elif a == b: </p>
+        <p class="fs-5 paragraph ms-2 mt-1">  &nbsp;&nbsp; print("a and b are equal")  </p>
+
+      </div>
+      <p class="fs-5 paragraph ms-2 mt-4">  
+        The above example code checks if b is greater than a and prints "b is greater than a". If b is equal to a, it prints "a and b are equal".    </p>
+
+      <p class="fs-5 paragraph ms-2 mt-4">Output:</p>
+      <div class="box">
+        <p class="fs-5 paragraph ms-2 mt-1"> a and b are equal   </p>
+ 
+      </div>
+      <ul class="para"> 
+        <li class="mt-4 fs-5">ELSE statement</li>
+      </ul>
+      <p class="fs-5 paragraph ms-2 mt-2 ">The else keyword catches anything which isn't caught by the preceding conditions.</p>
+      <p class="fs-5 paragraph ms-2 mt-4"> Example: </p>
+      <div class="box7">
+        <p class="fs-5 paragraph ms-2 mt-3">   a = 200  </p>
+        <p class="fs-5 paragraph ms-2 mt-1">  b = 33  </p>
+        <p class="fs-5 paragraph ms-2 mt-1"> if b > a: </p>
+        <p class="fs-5 paragraph ms-2 mt-1">  &nbsp;&nbsp;   print("b is greater than a")  </p>
+        <p class="fs-5 paragraph ms-2 mt-1"> elif a == b: </p>
+        <p class="fs-5 paragraph ms-2 mt-1">  &nbsp;&nbsp; print("a and b are equal") </p>
+        <p class="fs-5 paragraph ms-2 mt-1"> else: </p>
+        <p class="fs-5 paragraph ms-2 mt-1">  &nbsp;&nbsp;   print("a is greater than b") </p>
+
+      </div>
+      <p class="fs-5 paragraph ms-2 mt-4">The above example code compares a and b: if b > a, it prints "b is greater than a". If they are equal (a == b), it prints "a and b are equal", otherwise, it prints "a is greater than b".</p>  
+      <p class="fs-5 paragraph ms-2 mt-4">Output:</p>
+      <div class="box">
+        <p class="fs-5 paragraph ms-2 mt-1">a is greater than b  </p>
+ 
+      </div>
+      <p class="fs-4 headings text-center mt-2 "> Loops</p>
+      <p class="fs-5 paragraph ms-2 mt-4">Python has two primitive loop commands:</p>
+      <ul class="para"> 
+        <li class="mt-4 fs-5">for loop</li>
+      </ul>
+      <p class="fs-5 paragraph ms-2 mt-3">   Used for iterating over a sequence  </p>
+      <p class="fs-5 paragraph ms-2 mt-3">With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.</p>
+      <p class="fs-5 paragraph ms-2 mt-4"> Example (looping through a range): </p>
+      <div class="box5">
+        <p class="fs-5 paragraph ms-2 mt-4">  for i in range(5):   </p>
+        <p class="fs-5 paragraph ms-2 mt-1">  &nbsp;&nbsp;    print("Iteration:", i) </p>
+
+      </div>
+      <p class="fs-5 paragraph ms-2 mt-4">
+        The code defines a loop that iterates 5 times, with i taking values from 0 to 4. On each iteration, it prints the current iteration number using the print() function.</p>
+        <p class="fs-5 paragraph ms-2 mt-4">Output:</p>
+        <div class="box8">
+            <p class="fs-5 paragraph ms-2 mt-1">Iteration: 0  </p>
+            <p class="fs-5 paragraph ms-2 mt-1">Iteration: 1  </p>
+            <p class="fs-5 paragraph ms-2 mt-1">Iteration: 2  </p>
+            <p class="fs-5 paragraph ms-2 mt-1">Iteration: 3  </p>
+            <p class="fs-5 paragraph ms-2 mt-1">Iteration: 4  </p>
+     
+          </div>
+          <p class="fs-5 paragraph ms-2 mt-4"> Example ( Looping through a list): </p>
+          <div class="box4">
+            <p class="fs-5 paragraph ms-2 mt-4"> colors = ["red", "green", "blue"]  </p>
+            <p class="fs-5 paragraph ms-2 mt-1"> for color in colors: </p>
+            <p class="fs-5 paragraph ms-2 mt-1">  &nbsp;&nbsp;     print(color) </p>
+    
+          </div>
+          <p class="fs-5 paragraph ms-2 mt-4">The code defines a list `colors` containing three color strings: `"red"`, `"green"`, and `"blue"`. It then iterates through the list, printing each color one by one using the `print()` function.</p>
+          <p class="fs-5 paragraph ms-2 mt-2">Output:</p>
+          <div class="box4">
+            <p class="fs-5 paragraph ms-2 mt-1">red</p>
+            <p class="fs-5 paragraph ms-2 mt-1">green</p>
+            <p class="fs-5 paragraph ms-2 mt-1">blue</p>
+          </div>
+          <p class="fs-5 paragraph ms-2 mt-4"> Example ( Looping through a string): </p>
+          <div class="box5">
+            <p class="fs-5 paragraph ms-2 mt-4">  for char in "Python":  </p>
+            <p class="fs-5 paragraph ms-2 mt-1">  &nbsp;&nbsp;     print(char)</p>
+    
+          </div>
+          <p class="fs-5 paragraph ms-2 mt-4">The code iterates over the string `"Python"`, treating it as a sequence of characters. For each character in the string, it prints the character using the `print()` function.</p>
+          <p class="fs-5 paragraph ms-2 mt-2">Output:</p>
+          <div class="box9">
+            <p class="fs-5 paragraph ms-2 mt-1">P</p>
+            <p class="fs-5 paragraph ms-2 mt-1">y</p>
+            <p class="fs-5 paragraph ms-2 mt-1">t</p>
+            <p class="fs-5 paragraph ms-2 mt-1">h</p>
+            <p class="fs-5 paragraph ms-2 mt-1">o</p>
+            <p class="fs-5 paragraph ms-2 mt-1">n</p>
+
+          </div>
+          <ul class="para"> 
+            <li class="mt-4 fs-5">while loop</li>
+          </ul>
+          <p class="fs-5 paragraph ms-2 mt-1">Repeats as long as a condition is True.</p>
+          <p class="fs-5 paragraph ms-2 mt-4"> Example: </p>
+          <div class="box1">
+            <p class="fs-5 paragraph ms-2 mt-1">i = 1</p>
+            <p class="fs-5 paragraph ms-2 mt-1">while i < 6:</p>
+            <p class="fs-5 paragraph ms-2 mt-1">&nbsp;&nbsp;   print(i)</p>
+            <p class="fs-5 paragraph ms-2 mt-1">&nbsp;&nbsp;   i += 1</p>
+           
+          </div>
+          <p class="fs-5 paragraph ms-2 mt-4">The code initializes `i` to 1 and uses a `while` loop to run as long as `i` is less than 6. Inside the loop, it prints the current value of `i` and increments `i` by 1 on each iteration.</p>
+          <p class="fs-5 paragraph ms-2 mt-2">Output:</p>
+          <div class="box8">
+            <p class="fs-5 paragraph ms-2 mt-1">1</p>
+            <p class="fs-5 paragraph ms-2 mt-1">2</p>
+            <p class="fs-5 paragraph ms-2 mt-1">3</p>
+            <p class="fs-5 paragraph ms-2 mt-1">4</p>
+            <p class="fs-5 paragraph ms-2 mt-1">5</p>
+          </div>
+          <p class="fs-4 headings text-center mt-2 ">Break and Continue statements </p>
+          <p class="fs-5 paragraph ms-2 mt-2 ">Control loop execution:</p>
+          <ul class="para"> 
+            <li class="mt-4 fs-5">break: Exits the loop immediately.</li>
+            <li class="mt-2 fs-5">continue: Skips the current iteration and moves to the next.</li>
+          </ul>
+          <p class="fs-5 paragraph ms-2 mt-4"> Example (Using 'break'): </p>
+          <div class="box1">
+            <p class="fs-5 paragraph ms-2 mt-1">for i in range(10):</p>
+            <p class="fs-5 paragraph ms-2 mt-1"> &nbsp;&nbsp; if i == 5: </p>
+            <p class="fs-5 paragraph ms-2 mt-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  break  </p>
+            <p class="fs-5 paragraph ms-2 mt-1">&nbsp;&nbsp;  print(i)   </p>
+           
+          </div>
+          <p class="fs-5 paragraph ms-2 mt-4">The for loop iterates over numbers from 0 to 9 using range(10). When i equals 5, the 'break' statement exits the loop, stopping further iterations. As a result, only the numbers 0 to 4 are printed before the loop terminates.</p>
+          <p class="fs-5 paragraph ms-2 mt-2">Output:</p>
+          <div class="box8">
+          <p class="fs-5 paragraph ms-2 mt-1">0</p>
+          <p class="fs-5 paragraph ms-2 mt-1">1</p>
+          <p class="fs-5 paragraph ms-2 mt-1">2</p>
+          <p class="fs-5 paragraph ms-2 mt-1">3</p>
+          <p class="fs-5 paragraph ms-2 mt-1">4</p>
+        </div>
+        <p class="fs-5 paragraph ms-2 mt-4"> Example (Using 'continue'): </p>
+        <div class="box1">
+            <p class="fs-5 paragraph ms-2 mt-1">for i in range(10):</p>
+            <p class="fs-5 paragraph ms-2 mt-1"> &nbsp;&nbsp;    if i % 2 == 0:  </p>
+            <p class="fs-5 paragraph ms-2 mt-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  continue</p>
+            <p class="fs-5 paragraph ms-2 mt-1">&nbsp;&nbsp;    print(i) </p>
+           
+          </div>
+          <p class="fs-5 paragraph ms-2 mt-4">The for loop iterates over numbers from 0 to 9 using range(10). The if statement checks if 'i' is even (i % 2 == 0), and if true, the 'continue' statement skips the rest of the loop for that iteration. As a result, only odd numbers (1, 3, 5, 7, 9) are printed.</p>
+          <p class="fs-5 paragraph ms-2 mt-2">Output:</p>
+          <div class="box8">
+            <p class="fs-5 paragraph ms-2 mt-1">1</p>
+            <p class="fs-5 paragraph ms-2 mt-1">3</p>
+            <p class="fs-5 paragraph ms-2 mt-1">5</p>
+            <p class="fs-5 paragraph ms-2 mt-1">7</p>
+            <p class="fs-5 paragraph ms-2 mt-1">9</p>
+          </div>
+          <div type="button" class="btn button mb-4 mt-4 me-2  float-end"><a href="docu4.html" class="text-decoration-none text-dark">Next></a></div>
+          <div type="button" class="btn button mb-4  mt-4 ms-2 float-start"><a href="docu2.html" class="text-decoration-none text-dark"> Previous< </a></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>       
+</body>
+</html>    

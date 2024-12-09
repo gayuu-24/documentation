@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oject Oriented Programming</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="docu.css">
+    <link rel="icon" href="python.png" type="image/x-icon"/>
+</head>
+<body class="body">
+    <p class="fs-4 headings text-center mt-2 "> Classes and Objects</p>
+   
+    <ul class="para">
+        <li class="mt-4 fs-5">Python is an object oriented programming language.</li>
+        <li class="mt-3 fs-5"> Almost everything in Python is an object, with its properties and methods</li>
+        <li class="mt-3 fs-5">A Class is like an object constructor, or a "blueprint" for creating objects</li>
+    </ul>
+    <p class="fs-5 paragraph ms-2 mt-4">Creating a class:</p>
+    <p class="fs-5 paragraph ms-2 mt-4">To create a class, use the keyword class</p>
+    <div class="box5">
+        
+        <p class="fs-5 paragraph ms-2 mt-4">class MyClass:</p>
+        <p class="fs-5 paragraph ms-2 mt-4">  &nbsp;&nbsp;&nbsp; x = 5</p>
+
+    </div>
+    <p class="fs-5 paragraph ms-2 mt-4">Creating a object:</p>
+    <ul class="para">
+        <li class="mt-4 fs-5">We can use the class named MyClass to create objects</li>
+    </ul>
+    <div class="box3">
+        
+        <p class="fs-5 paragraph ms-2 mt-4">class MyClass:</p>
+        <p class="fs-5 paragraph ms-2 mt-2">&nbsp;&nbsp;&nbsp; x = 5</p>
+        <p class="fs-5 paragraph ms-2 mt-2">obj = MyClass()</p>
+        <p class="fs-5 paragraph ms-2 mt-2">print(obj.x)</p>
+
+    </div>
+    <p class="fs-5 paragraph ms-2 mt-3">Output:</p>
+    <div class="box2">
+        <p class="fs-5 paragraph ms-2 mt-3"> 5</p>
+    </div>
+    <p class="fs-4 headings text-center mt-4 ">Self parameter</p>
+    <p class="fs-5 paragraph ms-2 mt-4">The self parameter represents the current object of the class and lets you access its attributes and methods.</p>
+    <p class="fs-5 paragraph ms-2 mt-2">It is automatically passed when calling a method on an object.</p>
+    <p class="fs-5 paragraph ms-2 mt-2">Example:</p>
+    <div class="box15">
+        <p class="fs-5 paragraph ms-2 mt-4">class MyClass:</p>
+        <p class="fs-5 paragraph ms-2 mt-4">&nbsp;&nbsp;&nbsp;def show(self):</p>
+        <p class="fs-5 paragraph ms-2 mt-4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print("This is a method of the class.")</p>
+        <p class="fs-5 paragraph ms-2 mt-4">obj = MyClass() </p>
+        <p class="fs-5 paragraph ms-2 mt-4">obj.show()  </p>
+    </div>
+    <p class="fs-5 paragraph ms-2 mt-4 ">In this example, self refers to the object obj when calling the show() method.</p>
+    <p class="fs-5 paragraph ms-2 mt-4">Output:</p>
+    <div class="box2">
+        <p class="fs-5 paragraph ms-2 mt-1">This is a method of the class.</p>
+ 
+      </div>
+    <p class="fs-4 headings text-center mt-4 "> Object Methods</p>
+    <p class="fs-5 paragraph ms-2 mt-3">Objects can also contain methods. Methods in objects are functions that belong to the object.</p>
+    <p class="fs-5 paragraph ms-2 mt-2">Example:</p>
+    <div class="box15">
+        <p class="fs-5 paragraph ms-2 mt-4">class Dog:</p>
+        <p class="fs-5 paragraph ms-2 mt-4">&nbsp;&nbsp;&nbsp; def bark(self):</p>
+        <p class="fs-5 paragraph ms-2 mt-4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "Woof!"
+        </p>
+        <p class="fs-5 paragraph ms-2 mt-4">my_dog = Dog()</p>
+        <p class="fs-5 paragraph ms-2 mt-4">print(my_dog.bark())</p>
+
+    </div>
+    <p class="fs-5 paragraph ms-2 mt-4">The Dog class has a method bark that returns the string "Woof!".An object my_dog is created from the class, and calling my_dog.bark() prints "Woof!".</p>
+    <p class="fs-5 paragraph ms-2 mt-4">Output:</p>
+    <div class="box">
+        <p class="fs-5 paragraph ms-2 mt-1">Woof!</p>
+ 
+      </div>
+      <p class="fs-4 headings text-center mt-4 ">Variables inside the class</p>
+      <p class="fs-5 paragraph ms-2 mt-2">Example:</p>
+    <div class="box15">
+        <p class="fs-5 paragraph ms-2 mt-2">class student():</p>
+        <p class="fs-5 paragraph ms-2 mt-2">&nbsp;&nbsp;&nbsp;  name="abc"</p>
+        <p class="fs-5 paragraph ms-2 mt-2">&nbsp;&nbsp;&nbsp; sub="english"</p>
+        <p class="fs-5 paragraph ms-2 mt-2">obj = student()</p>
+        <p class="fs-5 paragraph ms-2 mt-2">print(obj.name)</p>
+        
+    </div>
+    <p class="fs-5 paragraph ms-2 mt-4">Output:</p>
+    <div class="box">
+        <p class="fs-5 paragraph ms-2 mt-1">abc</p>
+ 
+      </div>
+
+      <p class="fs-4 headings text-center mt-4 ">Constructor</p>
+      <p class="fs-5 paragraph ms-2 mt-2">It allocates size of the class</p>
+      <p class="fs-5 paragraph ms-2 mt-2">It gets call automatically when an object is created of a class</p>
+      <p class="fs-5 paragraph ms-2 mt-2">Example:</p>
+      <div class="box15">
+        <p class="fs-5 paragraph ms-2 mt-2">class student():</p>
+        <p class="fs-5 paragraph ms-2 mt-2">&nbsp;&nbsp;&nbsp; def __init__(self):</p>
+        <p class="fs-5 paragraph ms-2 mt-2">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; print("Reading") </p>
+        <p class="fs-5 paragraph ms-2 mt-2">&nbsp;&nbsp;&nbsp; def display(): </p>
+        <p class="fs-5 paragraph ms-2 mt-2">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  print("playing")</p>
+        <p class="fs-5 paragraph ms-2 mt-2">obj=student()</p>
+
+      </div>
+      <p class="fs-5 paragraph ms-2 mt-4">In above code we have created a object for the class student(). So the init function directly prints the output. </p>
+
+      <p class="fs-5 paragraph ms-2 mt-4">Output:</p>
+      <div class="box">
+          <p class="fs-5 paragraph ms-2 mt-1">Reading</p>
+   
+        </div>
+
+        <p class="fs-4 headings text-center mt-4 ">Inheritance</p>
+        <ul class="para">
+            <li class="mt-4 fs-5">Inheritance allows us to define a class that inherits all the methods and properties from another class.</li>
+            <li class="mt-4 fs-5">Parent class is the class being inherited from, also called base class.</li>
+            <li class="mt-4 fs-5">Child class is the class that inherits from another class, also called derived class.</li>
+
+        </ul>
+
+        <p class="fs-5 paragraph ms-2 mt-2">Example:(Single Inheritance) </p>
+
+
+        <div class="box16">
+            <p class="fs-5 paragraph ms-2 mt-2">class dad():&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#parent class</p>
+            <p class="fs-5 paragraph ms-2 mt-2">&nbsp;&nbsp;&nbsp;def phone(self):</p>
+            <p class="fs-5 paragraph ms-2 mt-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("dads phone")</p>
+            <p class="fs-5 paragraph ms-2 mt-2">class son():&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#child class</p>
+            <p class="fs-5 paragraph ms-2 mt-2">&nbsp;&nbsp;&nbsp;def lap(self):</p>
+            <p class="fs-5 paragraph ms-2 mt-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print("sons lap")</p>
+            <p class="fs-5 paragraph ms-2 mt-2">ram=son()</p>
+            <p class="fs-5 paragraph ms-2 mt-2">ram.lap()</p>
+            </div>
+            <p class="fs-5 paragraph ms-2 mt-4">Output:</p>
+            <div class="box">
+                <p class="fs-5 paragraph ms-2 mt-1">Sons lap</p>
+         
+              </div>
+
+              <p class="fs-5 paragraph ms-2 mt-4">Example:(Multiple Inheritance) </p>
+
+              <div class="box17">
+                <p class="fs-5 paragraph ms-2 mt-4">class dad():&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#parent class</p>
+                <p class="fs-5 paragraph ms-2 mt-2">&nbsp;&nbsp;&nbsp;def phone(self):</p>
+                <p class="fs-5 paragraph ms-2 mt-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("dads phone")</p>
+                <p class="fs-5 paragraph ms-2 mt-2">class mom():&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#child class</p>
+                <p class="fs-5 paragraph ms-2 mt-2">&nbsp;&nbsp;&nbsp;def sweet(self):</p>
+                <p class="fs-5 paragraph ms-2 mt-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("moms sweet")</p>
+                <p class="fs-5 paragraph ms-2 mt-2">class son(dad,mom):&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#child class</p>
+                <p class="fs-5 paragraph ms-2 mt-2">&nbsp;&nbsp;&nbsp;def lap(self):</p>
+                <p class="fs-5 paragraph ms-2 mt-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print("sons lap")</p>
+                <p class="fs-5 paragraph ms-2 mt-2">ram=son()</p>
+                <p class="fs-5 paragraph ms-2 mt-2">ram.sweet()</p>
+                <p class="fs-5 paragraph ms-2 mt-2">ram.lap()</p>
+                </div>
+                <p class="fs-5 paragraph ms-2 mt-4">The above program explains, where the son class inherits from both dad and mom classes. When the object ram (an instance of son) calls sweet() and lap(), it executes methods from both the mom and son classes. This shows how the child class can access methods from multiple parent classes.</p>
+                <p class="fs-5 paragraph ms-2 mt-4">Output:</p>
+                <div class="box5">
+                  <p class="fs-5 paragraph ms-2 mt-4">moms sweet</p>
+                  <p class="fs-5 paragraph ms-2 mt-3">dads phone</p>
+          
+                </div>
+
+                <p class="fs-4 headings text-center mt-4 ">Polymorphism</p>
+                <p class="fs-5 paragraph ms-2 mt-4">If we call one function for multiple times for our convenient thats called as polymorphism.</p>
+                <p class="fs-5 paragraph ms-2 mt-4">If overriding is done it also a polymorphism.</p>
+                <p class="fs-5 paragraph ms-2 mt-4">Example </p>
+                <div class="box18">
+                    <p class="fs-5 paragraph ms-2 mt-4">def add(a,b,c=0)</p>
+                    <p class="fs-5 paragraph ms-2 mt-4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(a+b+c)</p>
+                    <p class="fs-5 paragraph ms-2 mt-4">add(9,9)</p>
+                    <p class="fs-5 paragraph ms-2 mt-4">add(1,2,3)</p>
+
+                </div>
+                <p class="fs-5 paragraph ms-2 mt-4">Output:</p>
+                <div class="box5">
+                  <p class="fs-5 paragraph ms-2 mt-4">18</p>
+                  <p class="fs-5 paragraph ms-2 mt-3">6</p>
+          
+                </div>
+
+
+
+
+
+
+
+
+
+      <div type="button" class="btn button mb-4 mt-4 me-2  float-end"><a href="docu7.html" class="text-decoration-none text-dark">Next></a></div>
+      <div type="button" class="btn button mb-4  mt-4 ms-2 float-start"><a href="docu5.html" class="text-decoration-none text-dark"> Previous< </a></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>       
+</body>
+</html> 
